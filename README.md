@@ -13,7 +13,7 @@ försiktig. Man kan säkert även hitta exploits, ta reda på inloggningsdata oc
 uppgifter.
 
 Det finns säkert flera rättsfall, ett fall jag fann var när [Ebay försökte stämma företeget Bidders Edge](http://www.tomwbell.com/NetLaw/Ch06/eBay.html)
-för att de hade skrapat någon form av information från dem.
+för att de hade skrapat någon form av information från dem. Det finns såklart [många fler exempel](https://en.wikipedia.org/wiki/Web_scraping#Legal_issues)
 
 ##Finns det några riktlinjer för utvecklare att tänka på om man vill vara "en god skrapare" mot serverägarna?
 
