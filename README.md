@@ -44,10 +44,8 @@ beskrivs policys för webbskrapning mycket väl.
 
 ##Begränsningar i din lösning- vad är generellt och vad är inte generellt i din kod?
 
-Min applikation hårdkodar inte in bas-urlen, dock hårdkodas /calendar, /movie och /resturant då det endast var basURLen som INTE fick
-hårdkodas.
-**EDIT** TA BORT HÅRDKODADE URLER
-Dock iterar den igenom varje länk som motsvarar en person istället för att förutsätta att det alltid kommer vara peter, mary och paul, och att det alltid är 
+Min applikation hårdkodar inte in bas-urlen, dock finns ett strängberoende för att jämföra URL:erna av varje länk på förstasidan.
+Applikationen iterar den igenom varje länk som motsvarar en person istället för att förutsätta att det alltid kommer vara peter, mary och paul, och att det alltid är 
 3 personer. Detta innebär att ifall det blir 4 personer istället, bör det fungera att leta efter en dag som matchar alla 4, istället för 3.
 
 Applikationen har ett starkt strängberoende till dagarnas namn - exmpelvis ifall informationen byts ut till på engelska så 
@@ -55,3 +53,7 @@ måste koden ändras om, såväl som antalet dagar som i nuläget hanteras i swi
 
 
 ##Vad kan robots.txt spela för roll?
+
+Man kan se till att visa delar urler inte tillåts för vissa user-agents, genom att göra disallow. Dock kan man inte tillåta, endast förbjuda.
+
+[About Robot.Txt)(http://www.robotstxt.org/robotstxt.html)
