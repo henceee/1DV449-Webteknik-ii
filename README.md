@@ -56,4 +56,4 @@ måste koden ändras om, såväl som antalet dagar som i nuläget hanteras i swi
 
 Man kan se till att visa delar urler inte tillåts för vissa user-agents, genom att göra disallow. Dock kan man inte tillåta, endast förbjuda.
 
-[About Robot.Txt)(http://www.robotstxt.org/robotstxt.html)
+[About Robot.Txt](http://www.robotstxt.org/robotstxt.html)
