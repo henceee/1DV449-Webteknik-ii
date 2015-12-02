@@ -1,6 +1,6 @@
 # 1DV449-Webteknik-ii
 ##URL
-[URL till webbskrapan](http://hg222dv.freeiz.com/)
+[URL till webbskrapan](http://46.101.187.34/)
 
 ##Finns det några etiska aspekter vid webbskrapning. Kan du hitta något rättsfall?
 Angående etik, kan man självklart argumentera att det inte spelar någon roll ifall jag som användare använder ett skript för att utföra
