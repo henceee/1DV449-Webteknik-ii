@@ -17,7 +17,7 @@ echo <<<EOD
 		
 		<!-- CSS -->
 		
-		<!-- <link href=".css" rel="stylesheet" type="text/css" media="screen" title="Default" /> -->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" title="Default" />
 <title>Traffic Mashup</title>
 
 </head>
@@ -38,13 +38,12 @@ echo <<<EOD
 
 
 </div>
-
-<ul id="list" style="float:right; margin-right: 100px;">
+<div>
+<ul id="list">
 
 </ul>
 </div>
-<div id="map" style="float:left; width: 500px;
-    height: 500px; margin-top: 10px">
+<div id="map">
 
     </div>
 

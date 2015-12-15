@@ -1,0 +1,13 @@
+
+#list
+{
+	float:right; margin-right: 100px;
+}
+
+#map
+{
+	float:left;
+	width: 500px;
+    height: 500px;
+    margin-top: 10px
+}
