@@ -1,4 +1,4 @@
-##ProjektBeskrivning
+﻿##ProjektBeskrivning
 
 Mitt projekt kommer att vara en väderapplikationen, där användare kunna få en femdygnsprognos presenterad för den plats användaren anger.
 Finns det flera platser med samma namn ska användaren från en lista kunna välja den plats som prognosen ska visas för. Prognosen för en specifik
@@ -14,4 +14,3 @@ att undvika fler anrop till tjänsterna än nödvändigt, dvs lagring av persist
 ##Övrigt
 Projektet kommer att samköras med ASP.NET MVC kursen 1DV409 och består av den rekommenderade applikationen som angivits. [Följande krav måste därför
 uppfyllas](https://github.com/1dv409/kursmaterial/raw/master/Laborationsuppgifter/2-1-individuellt-arbete.pdf)
-
