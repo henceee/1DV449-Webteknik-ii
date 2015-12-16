@@ -1,6 +1,6 @@
 ﻿##ProjektBeskrivning
 
-Mitt projekt kommer att vara en väderapplikationen, där användare kunna få en femdygnsprognos presenterad för den plats användaren anger.
+Mitt projekt kommer att vara en väderapplikation, där användare kunna få en femdygnsprognos presenterad för den plats användaren anger.
 Finns det flera platser med samma namn ska användaren från en lista kunna välja den plats som prognosen ska visas för. Prognosen för en specifik
 dag skall minst baseras på period 2, d.v.s. prognosen mellan 12:00-18:00. Saknas period 2 ska period 3 användas. Saknas period 3 tas nästa dags period 2.
 Prognosen skall även innehålla en bild, som representerar vädret samt temperatur.
