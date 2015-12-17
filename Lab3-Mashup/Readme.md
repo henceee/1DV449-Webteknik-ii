@@ -23,3 +23,10 @@ Jag måste därför göra research för att finna alternativ till dessa i framti
 ###Hur har du tänkt kring optimeringen i din applikation?
 Optimeringen har främst skett genom att både lokalt och på serversidan spara data, för att minska antalen anrop till SR:s API. Anropet till serven kan ses som en proxy till själva tjänsten och kan inverka responstiden positivt för användaren.
 På grund av de problem som kan uppstå vid behov av uppdatering då filer minifierats har detta inte gjorts och inte heller ett DNS känns aktuellt med tanke på applikationens storlek. 
+
+
+###Vad är och varför kom HTTP2 till?
+Det största problemet med HTTP/1 var att den använde flera anlsutningar för att hämta resurser parallelt. En anslutning kan användas mellan en klient och server för att begära flera resurser såsom bilder,CSS, Javascript osv. Dessa måste dock hämtas en efter en, och ifall en tar lång tid. kommer övriga objekt som skall begäras vänta tills resursen laddas klart.
+
+
+###Vad är Service Workers?
