@@ -25,8 +25,14 @@ Optimeringen har främst skett genom att både lokalt och på serversidan spara 
 På grund av de problem som kan uppstå vid behov av uppdatering då filer minifierats har detta inte gjorts och inte heller ett DNS känns aktuellt med tanke på applikationens storlek. 
 
 
-###Vad är och varför kom HTTP2 till?
-Det största problemet med HTTP/1 var att den använde flera anlsutningar för att hämta resurser parallelt. En anslutning kan användas mellan en klient och server för att begära flera resurser såsom bilder,CSS, Javascript osv. Dessa måste dock hämtas en efter en, och ifall en tar lång tid. kommer övriga objekt som skall begäras vänta tills resursen laddas klart.
+###Vad är och varför kom HTTP/2 till?
+
+HTTP2 utvecklades för att minska laddtiden med 50 % samt undivka behovet för webbsidans ägare att ändra innehållet. Man ville även minimera komplexitet och samtidigt undvika förändringar i nätverksinstrastrukturen. Protokollet skulle utvecklas inom ett open-source community och kunna samla in data och analysera prestandaförändringar i det experientella protokollet. Det största problemet med HTTP/1 var att den använde flera anlsutningar för att hämta resurser parallelt. En anslutning kan användas mellan en klient och server för att begära flera resurser såsom bilder,CSS, Javascript osv. Dessa måste dock hämtas en efter en, och ifall en tar lång tid. kommer övriga objekt som skall begäras vänta tills resursen laddas klart. Syftet med HTTP/2 var att göra något åt denna problematik, samtidigt som man behöll den semantiska uppbyggnaden av HTTP/1.1.
+
+Med HTTP/2 används en TCP anslutning per origin, där en begäran görs och en stream upprätthålls, som är "multiplexed", vilket innebär just att en anslutning används för flera strömmar med data. Dessa kan även prioriteras, samt delas upp i såkallade frames, så att ifall resursen är en bild t.ex. så kan dess header skickas tillbaka med dess dimensioner, men själva data framen prioretas lägre. Det finns även frame för att avsluta begäran efter en resurs. Olika vikt kan läggas på frames, och sedan beror leveransen av frames på dessa "weights" såväl som på eventuella beroende som kan finnas imellan dem. Dock behöver inte klienten inte begära varje resurs explicit, utan servern kan göra en såkallad "push promise", där servern helt enkelt skickar ett löfte att skicka med resten senare.
+
+Domännamn kan även kollas upp i förhand för att minska antalet DNS-lookups, det vill säga Domain Name Service Lookups, säväl som föreberedelser inför TCP anslutningar, så att ett HTTP anrop förutses och en TCP anslutning öpnnas för att undivka ett nytt TCP handslag.
+
 
 
 ###Vad är Service Workers?
