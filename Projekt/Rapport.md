@@ -26,7 +26,7 @@ Då lagrade procedurer används, samt att ogiltiga id orsakar applikationsfel so
 ##Reflektioner
 Projektet har varit svårt och medfört mycket motgångar men det har varit intressant att jobba mot API:er i ASP.Net då det fortfande är nytt för mig. Dock orsakar Entity Framework ibland ett Optimistic Concurrency Exception – en bugg som jag inte vet vad det beror på. Mats sade att jag skulle testa att avlägsna min egna kod och försöka att lägga till ett objekt direkt jämtemot min WeatherMashupEntity, vilket jag gjorde och kunde göra slutsatsen att det inte är min kod som orsakar detta exception då det inte fungerade då heller. De lagrade procedurerna fungerar som de skall då jag kör dem i SQL Server, och att föra över koden till ett nytt projekt och lägga en ny modell från databasen fungerade inte heller. 
 
-
+Observera: För att kunna ansluta, krävs anslutning till VPN 200
 ## Länkar
 [Applikationen](http://172.16.214.1/1dv409/hg222dv)
 
